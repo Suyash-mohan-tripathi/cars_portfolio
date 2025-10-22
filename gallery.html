@@ -1,0 +1,124 @@
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery - CarVista 360°</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-center">
+            <i data-feather="image" class="inline mr-2"></i> Car Gallery
+        </h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Car Card 1 -->
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('http://static.photos/automotive/640x360/1');"></div>
+                <div class="car-info">
+                    <h3>Toyota Supra MK4</h3>
+                    <p class="text-gray-400">1993-2002</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-blue-400 font-medium">$65,000</span>
+                        <button class="view-btn">
+                            <i data-feather="eye" class="mr-1"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Car Card 2 -->
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('http://static.photos/automotive/640x360/2');"></div>
+                <div class="car-info">
+                    <h3>Ford Mustang GT</h3>
+                    <p class="text-gray-400">2020-Present</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-blue-400 font-medium">$42,000</span>
+                        <button class="view-btn">
+                            <i data-feather="eye" class="mr-1"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Car Card 3 -->
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('http://static.photos/automotive/640x360/3');"></div>
+                <div class="car-info">
+                    <h3>BMW M5 Competition</h3>
+                    <p class="text-gray-400">2021-Present</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-blue-400 font-medium">$108,000</span>
+                        <button class="view-btn">
+                            <i data-feather="eye" class="mr-1"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Car Card 4 -->
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('http://static.photos/automotive/640x360/4');"></div>
+                <div class="car-info">
+                    <h3>Tesla Model S Plaid</h3>
+                    <p class="text-gray-400">2021-Present</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-blue-400 font-medium">$135,000</span>
+                        <button class="view-btn">
+                            <i data-feather="eye" class="mr-1"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Car Card 5 -->
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('http://static.photos/automotive/640x360/5');"></div>
+                <div class="car-info">
+                    <h3>Porsche 911 Turbo S</h3>
+                    <p class="text-gray-400">2022-Present</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-blue-400 font-medium">$215,000</span>
+                        <button class="view-btn">
+                            <i data-feather="eye" class="mr-1"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Car Card 6 -->
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('http://static.photos/automotive/640x360/6');"></div>
+                <div class="car-info">
+                    <h3>Ferrari 488 Pista</h3>
+                    <p class="text-gray-400">2018-2020</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-blue-400 font-medium">$350,000</span>
+                        <button class="view-btn">
+                            <i data-feather="eye" class="mr-1"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Brand buttons */
+.brand-btn {
+    @apply px-3 py-2 rounded-lg bg-gray-700 text-sm font-medium transition-all;
+}
+
+.brand-btn:hover {
+    @apply bg-gray-600;
+}
+
+.brand-btn.active {
+    @apply bg-blue-600 text-white;
+}
+
+/* Specification cards */
+.spec-card {
+    @apply p-4 bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all;
+}
+
+.spec-card h3 {
+    @apply text-blue-400;
+}
+
+/* 3D viewer container */
+#car-viewer {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #car-viewer {
+        min-height: 300px;
+    }
+}
